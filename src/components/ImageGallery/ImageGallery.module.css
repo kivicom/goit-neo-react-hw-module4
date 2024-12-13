@@ -1,0 +1,12 @@
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Адаптивные колонки */
+  grid-auto-rows: 250px; /* Базовая высота строки */
+  gap: 10px; /* Расстояние между элементами */
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  margin: 0;
+}

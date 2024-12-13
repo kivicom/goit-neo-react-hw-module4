@@ -1,0 +1,26 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  color: #f5f5f5;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+  outline: none;
+  border: 2px solid blue;
+  background-color: blue;
+  border-radius: 3px;
+  margin: 10px auto;
+}
+
+btn:hover,
+btn:focus {
+  background-color: darkblue;
+  border-color: darkblue;
+}
+
+btn:active {
+  background-color: lightblue;
+  border-color: lightblue;
+}

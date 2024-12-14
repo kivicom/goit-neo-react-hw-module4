@@ -1,9 +1,3 @@
-.gallery-item {
-  position: relative;
-  overflow: hidden; /* Убираем лишние части изображения */
-  border-radius: 5px; /* Округляем углы */
-}
-
 .gallery-item img {
   width: 100%;
   height: 100%;

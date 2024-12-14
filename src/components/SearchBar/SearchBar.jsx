@@ -1,18 +1,21 @@
 import style from './SearchBar.module.css';
+import { toast } from 'react-toastify';
 
 const SearchBar = ({ onSubmit }) => {
   const searchForm = e => {
     e.preventDefault();
     const form = e.target;
-    console.dir(form.elements.query.value);
-    if (form.elements.query.value.trim() === '') {
-      alert('Please enter search term!');
+    const query = form.elements.query.value.trim();
+
+    if (query === '') {
+      toast.info('Please enter a search term!');
       return;
     }
 
-    onSubmit(form.elements.query.value.trim());
+    onSubmit(query);
     form.reset();
   };
+
   return (
     <form onSubmit={searchForm} className={style['search-form']}>
       <input
